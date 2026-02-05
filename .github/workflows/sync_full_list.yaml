@@ -7,8 +7,8 @@ on:
         description: '指定Golang版本序号(只能{ =0 | 1 }二选一,默认为0)'
         required: false
         type: string
-  schedule:
-   - cron: '10 2 * * *'  # 每天凌晨2点10分自动执行(使用最新版本)
+  # schedule:
+  # - cron: '10 2 * * *'  # 每天凌晨2点10分自动执行(使用最新版本)
 
 permissions:
   contents: write
