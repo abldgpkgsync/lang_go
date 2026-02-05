@@ -132,7 +132,7 @@ jobs:
             exit 1
           fi
 
-          local file_count=$(ls -la dist/ | grep -v "^total" | grep -v "^\." | wc -l)
+          file_count=$(ls -la dist/ | grep -v "^total" | grep -v "^\." | wc -l)
           if [[ $file_count -eq 0 ]]; then
             echo "错误: dist目录为空,没有下载任何文件"
             exit 1
